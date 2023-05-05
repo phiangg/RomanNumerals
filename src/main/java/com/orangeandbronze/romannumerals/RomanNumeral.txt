@@ -1,0 +1,11 @@
+This is a Java class called "RomanNumeralCoverter" that has a method named "intToRoman" for converting an integer to its corresponding Roman numeral representation.
+
+The "intToRoman" method taks an integer "num" as an input and returns a string representing the Roman numeral equivalent of "num".
+
+The method defines 2 ar9rays called "symbols" and "values". These arrays define the Roman numeral symbolds and their corresponding integer values. (e.g. "X" reperesents the value 10).
+
+The method then uses a (for) loop to iterate through the "symbols" and "values" arrays. For each element in the arrays, the loop checks if the current value of "num" is greater than
+or equal to the current value in the "values" array. If it is, the corresponding symbol from the "symbols" array is appended to a "StringBuilder" object called "builder", and the
+current value in the "values" array. This process continues until "num" has been reduced to zero.
+
+Finally, the method returns the "builder" object as a string using the "toString" method.
