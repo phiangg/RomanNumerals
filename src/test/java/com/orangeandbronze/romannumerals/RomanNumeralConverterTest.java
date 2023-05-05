@@ -38,4 +38,9 @@ class RomanNumeralConverterTest {
     void intToRoman_10() {
         assertEquals("X", new RomanNumeralConverter().intToRoman(10));
     }
+
+    @Test
+    void intToRoman_24(){
+        assertEquals("XXIV", new RomanNumeralConverter().intToRoman(24));
+    }
 }
