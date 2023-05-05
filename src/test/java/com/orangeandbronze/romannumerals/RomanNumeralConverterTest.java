@@ -35,12 +35,22 @@ class RomanNumeralConverterTest {
     }
 
     @Test
-    void intToRoman_10() {
-        assertEquals("X", new RomanNumeralConverter().intToRoman(10));
+    void intToRoman_24(){
+        assertEquals("XXIV", new RomanNumeralConverter().intToRoman(24));
     }
 
     @Test
-    void intToRoman_24(){
-        assertEquals("XXIV", new RomanNumeralConverter().intToRoman(24));
+    void intToRoman_69(){
+        assertEquals("LXIX", new RomanNumeralConverter().intToRoman(69));
+    }
+
+    @Test
+    void intToRoman_500(){
+        assertEquals("D", new RomanNumeralConverter().intToRoman(500));
+    }
+
+    @Test
+    void intToRoman_1000(){
+        assertEquals("M", new RomanNumeralConverter().intToRoman(1000));
     }
 }
